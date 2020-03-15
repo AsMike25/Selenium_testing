@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 #Checking if the page titles are displayed
 driver = webdriver.Firefox(executable_path='C:\Python\geckodriver.exe')
-driver.get("http://localhost:3000/")
+driver.get("https://lit-scrubland-01256.herokuapp.com/")
 time.sleep(1)
 print("Title of "+driver.current_url+" : "+driver.title)
 driver.find_element_by_xpath("/html/body/div/div[1]/nav/div/ul/li/a").click()
