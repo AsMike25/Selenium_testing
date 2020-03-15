@@ -6,7 +6,7 @@ driver = webdriver.Firefox(executable_path='C:\Python\geckodriver.exe')
 
 driver.maximize_window()
 
-driver.get("http://localhost:3000/")
+driver.get("https://lit-scrubland-01256.herokuapp.com/")
 time.sleep(2)
 driver.find_element_by_xpath("/html/body/div/div/nav/div/ul/li/a").click()
 time.sleep(2)
