@@ -3,7 +3,7 @@ import time
 driver = webdriver.Firefox(executable_path='C:\Python\geckodriver.exe')
 driver.maximize_window()
 print("Waiting for home page to open...")
-driver.get("http://localhost:3000/")
+driver.get("https://lit-scrubland-01256.herokuapp.com/")
 print("Page opened Successfully!")
 time.sleep(1)
 driver.find_element_by_xpath("/html/body/div/div[1]/nav/div/ul/li/a").click()
