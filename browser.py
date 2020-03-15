@@ -4,7 +4,7 @@ from selenium import webdriver
 
 driver = webdriver.Firefox(executable_path='C:\Python\geckodriver.exe')
 
-driver.get("http://localhost:3000/")
+driver.get("https://lit-scrubland-01256.herokuapp.com/")
 
 print(driver.title)
 print(driver.current_url)
