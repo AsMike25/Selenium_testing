@@ -4,7 +4,7 @@ import time
 
 driver = webdriver.Firefox(executable_path='C:\Python\geckodriver.exe')
 
-driver.get("http://localhost:3000/")
+driver.get("https://lit-scrubland-01256.herokuapp.com/")
 
 time.sleep(3)
 
