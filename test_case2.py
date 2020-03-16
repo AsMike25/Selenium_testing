@@ -3,14 +3,14 @@ from selenium.webdriver.remote.webelement import WebElement
 import time
 #checking if login is working with correct credentials
 driver = webdriver.Firefox(executable_path='C:\Python\geckodriver.exe')
-driver.get("http://localhost:3000/")
+driver.get("https://lit-scrubland-01256.herokuapp.com/")
 driver.find_element_by_xpath("/html/body/div/div[1]/nav/div/ul/li/a").click()
 driver.find_element_by_name("user_name").send_keys("cse17259")
 driver.find_element_by_name("password").send_keys("qwertyuio")
 driver.find_element_by_xpath("/html/body/div/div[2]/div/div/div/div/div[1]/div/form/div[3]/div[1]/button").click()
 time.sleep(2)
 print(driver.current_url)
-if (driver.current_url == "http://localhost:3000/admin"):
+if (driver.current_url == "https://lit-scrubland-01256.herokuapp.com/admin"):
     print("Login Successful")
 else:
     get_div = driver.find_element_by_css_selector(".text-center > div:nth-child(1) > h2:nth-child(1)").text
