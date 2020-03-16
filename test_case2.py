@@ -14,7 +14,7 @@ if(driver.current_url == "https://lit-scrubland-01256.herokuapp.com/admin" or "h
 else:
     get_div = driver.find_element_by_css_selector(".text-center > div:nth-child(1) > h2:nth-child(1)").text
     print(get_div)
-    if (get_div == "No Such Roll Number Exists"):
+    if (get_div == "No Such Roll Number Exists" or "Wrong Password Try Again"):
         print("Incorrect credentials")
 
 
